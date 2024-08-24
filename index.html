@@ -5,12 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/a336628925.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <section>
+    <section id="landing">
       <nav>
+        <div class="nav__container">
+          <div class="logo__container">
+            <figure class="logo__wrapper">
+              <img
+                src="./assets/guitar-instrument-electric-svgrepo-com.png"
+                alt=""
+                class="logo"
+              />
+            </figure>
+            <div class="logo__text--container">
+              <span class="logo__text">Music Store</span>
+              <span class="text-est">Est. 2024</span>
+            </div>
+          </div>
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+            <li>
+              <a class="nav__link--primary" href="#instruments">Instruments</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <header></header>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1>The #1 music instrument shop</h1>
+            <h2>Find your favorite <span class="blue">instrument</span></h2>
+            <button class="btn">Browse instruments</button>
+          </div>
+          <figure class="header__img--wrapper">
+            <img src="./assets//undraw_compose_music_re_wpiw.svg" alt="" />
+          </figure>
+        </div>
+      </header>
     </section>
+    <main>
+      <section id="services">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Our <span class="blue">services</span>
+            </h2>
+
+            <div class="services__list">
+              <div class="service__wrapper">
+                <div class="service">
+                  <div class="service__icon--wrapper">
+                    <i class="fa-solid fa-book" style="color: #0b2a7e"></i>
+                  </div>
+                  <div class="service__text">
+                    <h3>Lessons</h3>
+                    <p>Learn from expert instructors</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service__wrapper">
+                <div class="service">
+                  <div class="service__icon--wrapper">
+                    <i class="fa-solid fa-money-check-dollar" style="color: #0b2a7e"></i>
+                  </div>
+                  <div class="service__text">
+                    <h3>Sell your instrument</h3>
+                    <p>
+                      Sell your instruments or trade them in for instant credit
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="service__wrapper">
+                <div class="service">
+                  <div class="service__icon--wrapper">
+                    <i class="fa-solid fa-guitar" style="color: #0b2a7e"></i>
+                  </div>
+                  <div class="service__text">
+                    <h3>Buy instruments</h3>
+                    <p>Browse through a list of your favorite instruments</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="featured__instruments">
+        <div class="container">
+          <div class="row">
+            
+          </div>
+        </div>
+      </section>
+      <section id="new__instruments"></section>
+    </main>
   </body>
 </html>
