@@ -233,7 +233,9 @@ button:active {
   width: 90%;
 }
 
-.fa-solid {
+.fa-book,
+.fa-money-check-dollar,
+.fa-guitar {
   font-size: 36px;
 }
 
@@ -262,16 +264,55 @@ button:active {
 
 .instrument__img--wrapper {
   margin: 12px;
+}
 
+.instrument__wrapper:hover .instrument__img {
+  transform: scale(1.05);
 }
 
 .instrument__img {
   width: 100%;
+  transition: all 200ms ease;
+  cursor: no-drop;
 }
 
 .instrument__text--wrapper {
   text-align: left;
   margin-bottom: 4px;
+}
+
+.instrument__text:hover {
+  text-decoration: underline;
+  cursor: no-drop;
+}
+
+.discounted__price {
+  font-size: 14px;
+  color: #bdc1ca;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.price {
+  height: 100%;
+  width: 100%;
+}
+
+.stars {
+  margin: 4px 0;
+}
+
+.fa-star,
+.fa-star-half {
+  color: #e0c960;
+  font-size: 16px;
+}
+
+.fa-star:hover,
+.fa-star-half:hover {
+  color: #ecd982;
+  font-size: 17px;
+
 }
 
 .atc__button {
@@ -297,4 +338,3 @@ button:active {
   font-weight: 600;
   filter: brightness(110%);
 }
-
