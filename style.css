@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.section__title {
+  background-color: rgb(255, 185, 33);
+}
+
 nav {
   height: 80px;
   display: flex;
@@ -127,8 +131,9 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 56px;
+  padding: 10px 0;
   margin-bottom: 40px;
+  font-size: 52px;
 }
 
 h3 {
@@ -184,7 +189,7 @@ button:active {
 }
 
 .container {
-  padding: 56px 0;
+  padding: 24px 0;
 }
 
 .row {
@@ -222,7 +227,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid rgb(199, 226, 226);
+  border: 2px solid black;
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -241,11 +246,10 @@ button:active {
 
 /* FEATURED INSTRUMENTS*/
 
+
 .instrument__list {
   display: flex;
-  max-height: 1400px;
-  height: 100%;
-  flex: wrap;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
@@ -257,9 +261,9 @@ button:active {
 }
 
 .instrument {
-  height: 100%;
   width: calc(100% / 4);
-  margin: 0 24px;
+  padding: 8px;
+  margin-bottom: 56px;
 }
 
 .instrument__img--wrapper {
