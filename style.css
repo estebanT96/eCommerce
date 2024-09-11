@@ -9,7 +9,6 @@
 
 .section__title {
   background-color: rgb(255, 185, 33);
-  width: ;
 }
 
 nav {
@@ -27,11 +26,11 @@ nav {
   margin: 0 auto;
 }
 
-.logo__container {
+.nav__logo--container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 210px;
+  max-width: 160px;
+  width: 100%;
 }
 
 .logo__wrapper {
@@ -130,6 +129,12 @@ h1 {
   text-align: center;
 }
 
+.explore__title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 52px;
+}
+
 h2 {
   text-align: center;
   padding: 10px 0;
@@ -157,25 +162,27 @@ p {
 
 .btn {
   background-color: #ffcf6f;
-  padding: 12px 20px;
+  padding: 12px;
   font-size: 20px;
   font-weight: 500;
   border-radius: 4px;
   border: none;
   box-shadow: 1px 1px 1px 0.4px #a5adc5;
   transition: all 200ms ease;
-  margin-bottom: 4px;
+  margin-bottom: 24px;
 }
 
 .btn:hover {
   background-color: #ffcf6f;
-  filter: brightness(110%);
-  padding: 12px 20px;
+  padding: 16px;
   font-size: 20px;
   font-weight: 500;
   border-radius: 4px;
   border: none;
   box-shadow: 1px 1px 1px 0.4px #a5adc5;
+  transition: all 200ms ease;
+  margin-bottom: 20px;
+  filter: brightness(110%);
 }
 
 button {
@@ -355,36 +362,44 @@ button:active {
 /*footer */
 
 footer {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
   background-color: black;
 }
 
 .footer__logo--container {
-  padding: 16px 0;
   display: flex;
   justify-content: center;
   max-height: 100px;
+  height: 100%;
 }
 
 .footer__logo {
-  transform: scale(0.5);
+  height: 100%;
+  width: 100px;
 }
 
-.footer__logo--text-container {
-  width: 90px;
-  display: flex;
-  flex-direction: column;
+.logo__text--container {
+  max-width: 80px;
   justify-content: center;
 }
 
 .footer__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  list-style: none;
 }
 
-.footer__link {
+.footer__list--link {
   color: white;
+  font-weight: bold;
   list-style: none;
-  margin: 0 4px;
+  margin: 8px 24px;
+}
+
+.footer__list--link:hover {
+  color: rgb(255, 185, 33);
+  font-weight: bold;
+  list-style: none;
+  margin: 8px 24px;
+  cursor: pointer;
 }
