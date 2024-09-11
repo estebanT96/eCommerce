@@ -97,7 +97,6 @@ nav {
 
 .nav__link--primary:hover {
   background-color: #ffcf6f;
-  border: 2px solid #ffcf6f;
 }
 
 header {
@@ -174,14 +173,14 @@ p {
 
 .btn:hover {
   background-color: #ffcf6f;
-  padding: 16px;
+  padding: 12px;
   font-size: 20px;
   font-weight: 500;
   border-radius: 4px;
   border: none;
   box-shadow: 1px 1px 1px 0.4px #a5adc5;
   transition: all 200ms ease;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   filter: brightness(110%);
 }
 
