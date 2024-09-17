@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section__title {
   background-color: rgb(255, 185, 33);
 }
@@ -15,6 +19,18 @@ nav {
   height: 80px;
   display: flex;
   background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.no-cursor {
+  cursor: no-drop;
 }
 
 .nav__container {
@@ -97,6 +113,11 @@ nav {
 
 .nav__link--primary:hover {
   background-color: #ffcf6f;
+}
+
+.btn__menu {
+  background-color: transparent;
+  border: none;
 }
 
 header {
@@ -386,6 +407,8 @@ footer {
   display: flex;
   justify-content: center;
   list-style: none;
+  
+  
 }
 
 .footer__list--link {
@@ -393,6 +416,8 @@ footer {
   font-weight: bold;
   list-style: none;
   margin: 8px 24px;
+
+  
 }
 
 .footer__list--link:hover {
@@ -402,3 +427,12 @@ footer {
   margin: 8px 24px;
   cursor: pointer;
 }
+
+.copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 8px;
+}
+

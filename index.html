@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Music Store</title>
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/a336628925.js"
@@ -30,11 +30,18 @@
           <ul class="nav__links">
             <li><a class="nav__link" href="#home">Home</a></li>
             <li><a class="nav__link" href="#contact">Contact</a></li>
-            <li>
-              <a class="nav__link--primary" href="#featured__instruments"
-                >Instruments</a
-              >
-            </li>
+            <li><a class="nav__link--primary" href="#featured__instruments">Instruments</a></li>
+          </ul>
+        </div>
+        <button class="btn__menu">
+          <i class="fas fa-bars" style="color: white; font-size: 16px"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close"><i class="fas fa-times" style="color: white; font-size: 16px;"></i></button>
+          <ul>
+            <li class="menu__list"><a href="#home" class="menu__link">Home</a></li>
+            <li class="menu__list"><a href="#featured__instruments" class="menu__link">Instruments</a></li>
+            <li class="menu__list"><a href="#contact" class="menu__link no-cursor">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -499,6 +506,7 @@
             <a href=""><li class="footer__list--link">Contact</li></a>
           </ul>
         </div>
+        <span class="copyright">Copyright© 2024 Music Store</span>
       </div>
     </div>
   </footer>
