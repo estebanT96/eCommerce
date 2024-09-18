@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Store</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/a336628925.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -28,21 +29,36 @@
             </div>
           </div>
           <ul class="nav__links">
-            <li><a class="nav__link" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#landing">Home</a></li>
             <li><a class="nav__link" href="#contact">Contact</a></li>
-            <li><a class="nav__link--primary" href="#featured__instruments">Instruments</a></li>
+            <li>
+              <a class="nav__link--primary" href="#featured__instruments"
+                >Instruments</a
+              >
+            </li>
           </ul>
-        </div>
-        <button class="btn__menu">
-          <i class="fas fa-bars" style="color: white; font-size: 16px"></i>
-        </button>
-        <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close"><i class="fas fa-times" style="color: white; font-size: 16px;"></i></button>
-          <ul>
-            <li class="menu__list"><a href="#home" class="menu__link">Home</a></li>
-            <li class="menu__list"><a href="#featured__instruments" class="menu__link">Instruments</a></li>
-            <li class="menu__list"><a href="#contact" class="menu__link no-cursor">Contact</a></li>
-          </ul>
+
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#landing" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#featured__instruments" class="menu__link" onclick="closeMenu()">Instruments</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#contact" class="menu__link" style="cursor: no-drop" onclick="closeMenu()">Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -476,7 +492,7 @@
       </section>
       <section id="explore">
         <div class="yellow__background">
-          <h3 class="explore__title">Explore more Instruments</h3>
+          <h2 class="explore__title">Explore more Instruments</h2>
           <a href=""><button class="btn">Browse</button></a>
         </div>
       </section>
